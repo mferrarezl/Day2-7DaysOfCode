@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Usuário</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__links" href="index.html">Home</a>
+            <a class="cabecalho__menu__links" href="about.html">Sobre nós</a>
+            <a class="cabecalho__menu__links" href="user.html">Usuário</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <form>
+                <div class="apresentacao__conteudo__preencher">
+                    <label class="apresentacao__caixa__label" for="nome">Qual o seu nome?</label>
+                    <input class="apresentacao__caixa__texto" type="text" id="nome" name="nome">
+                    <label class="apresentacao__caixa__label" for="idade">Qual a sua idade?</label>
+                    <input class="apresentacao__caixa__texto" type="number" id="idade" name="idade">
+
+                    <p class="apresentacao__caixa__label__radio">Você já é Gamer Health?</p>
+               
+                <div class="apresentacao__radio">
+                    <label for="simgamer">
+                    <input type="radio" id="simgamer" name="gamer">
+                    Sim, eu sou!</label>
+
+                    <label for="naogamer">
+                    <input type="radio" id="naogamer" name="gamer">
+                    Não, não sou!</label>
+                </div>
+
+
+                    <button class="button" id="button" name="button" onclick="enviar()">Enviar</button>
+                </div>
+            </form>
+        </section>
+            
+            <img src="./assets/healthplan.png" alt="Imagem de um menino jogando no computador">
+    </main>
+    <footer>
+        <p class="rodape">Desenvolvido por <strong>Matheus Ferrarez</strong></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
